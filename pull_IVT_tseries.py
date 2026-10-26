@@ -10,14 +10,14 @@ import numpy as np
 from pathlib import Path
 
 path_to_ERA5 = Path("/data/projects/external_datasets/ERA5_IVT/data/processed/")
-path_to_out  = Path("/home/dnash/repos/ivt_isotope_analysis/data/ERA5_IVT_point_timeseries_20250801-20260131_135.25W_57N.csv")
+path_to_out  = Path("/home/dnash/repos/ivt_isotope_analysis/data/IVT/ERA5_IVT_point_timeseries_20250201-20260930_135.25W_57N.csv")
 
 # target grid cell - closest to Sitka
 x = -135.33
 y = 57.05
 
-start = "2025-08-01"
-end   = "2026-01-31"
+start = "2026-02-01"
+end   = "2026-09-30"
 
 # create date range
 dates = pd.date_range(start, end, freq="D")
